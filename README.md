@@ -24,6 +24,18 @@ RESULT_MAIL_MESSAGE = You got mail!
 RESULT_MAIL_ATTACH_FILENAME = file.pdf
 ```
 
+install dependencies
+
+```
+npm install
+```
+
+Set permissions on pdf-files folder
+
+```
+sudo chmod 777 pdf-files
+```
+
 Then just start the service
 
 ```

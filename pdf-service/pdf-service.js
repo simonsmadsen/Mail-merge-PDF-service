@@ -4,7 +4,7 @@ const fs = require('fs');
 module.exports = {
 
 	saveAttachments: function(attachments,incCounter,onAllAttachmentsSaved){
-		let self = this;
+		var self = this;
 	    if(incCounter < attachments.length){
 			fs.appendFile('./pdf-files/downloaded_'+incCounter+'.pdf', new Buffer(attachments[incCounter].message), function (err) {
 			   self.saveAttachments(attachments,incCounter +1,onAllAttachmentsSaved);
