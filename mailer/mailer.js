@@ -27,7 +27,7 @@ module.exports = {
 
 	respond : function(mergedPDF,sender,connection){
 		var self = this;
-		let mail = new PixlMail( process.env.SMTP_HOST, process.env.SMTP_PORT );
+		var mail = new PixlMail( process.env.SMTP_HOST, process.env.SMTP_PORT );
 		mail.setOption( 'secure', process.env.SMTP_SSL ); 
 		mail.setOption( 'auth', { user: process.env.MAIL_USERNAME, pass: process.env.MAIL_PASSWORD} );
 		var message = 

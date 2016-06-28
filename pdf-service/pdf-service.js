@@ -34,9 +34,9 @@ module.exports = {
     },
 
   	merge: function(attachments,onDone){
-		let self = this;
+		var self = this;
 
-		let filenames = [];
+		var filenames = [];
 	    for(i = 0; i < attachments.length; i++){
 	    	filenames[i] = './pdf-files/downloaded_'+i+'.pdf';
 	    }
