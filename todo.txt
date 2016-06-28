@@ -1,0 +1,6 @@
+##	TODO
++ kaldt de 2 filer for services
++ refactor
++ lav guide
++ test på server
++ uplaod til github
